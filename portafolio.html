@@ -4,53 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio — Imandro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <div class="logo">Imandro</div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="nav-links">
-            <a href="index.html">Inicio</a>
-            <a href="pagina2.html">Canciones</a>
-            <a href="portafolio.html" class="active">Detalles</a>
-            <a href="roadmap.html">Roadmap</a>
-            <a href="juego.html">Juego</a>
-            <a href="certificados.html">Certificados</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">Imandro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Canciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portafolio.html">Detalles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="roadmap.html">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juego.html">Juego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificados.html">Certificados</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
 
 <main>
     <section class="hero-portfolio">
-        <div class="hero-portfolio-content">
-            <div class="profile-photo-container">
-                <img src="WhatsApp Image 2025-11-17 at 23.07.15.jpeg" alt="Imandro" class="profile-photo">
-            </div>
-            <h1>Imandro</h1>
-            <p class="hero-subtitle">Estudiante de Ingeniería en Sistemas</p>
-            <p class="hero-description">
-                Estudiante de 2do año en la UNAN León, apasionado por el desarrollo web y la programación. 
-                Me enfoco en crear soluciones prácticas mientras continúo aprendiendo y mejorando mis habilidades 
-                en tecnologías modernas.
-            </p>
-            <div class="hero-buttons">
-                <a href="https://github.com/Imandro" target="_blank" class="btn-primary">Ver GitHub</a>
-                <a href="#contacto" class="btn-secondary">Contacto</a>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="hero-portfolio-content">
+                        <div class="profile-photo-container">
+                            <img src="WhatsApp Image 2025-11-17 at 23.07.15.jpeg" alt="Imandro" class="profile-photo img-fluid">
+                        </div>
+                        <h1>Imandro</h1>
+                        <p class="hero-subtitle">Estudiante de Ingeniería en Sistemas</p>
+                        <p class="hero-description">
+                            Estudiante de 2do año en la UNAN León, apasionado por el desarrollo web y la programación. 
+                            Me enfoco en crear soluciones prácticas mientras continúo aprendiendo y mejorando mis habilidades 
+                            en tecnologías modernas.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="https://github.com/Imandro" target="_blank" class="btn-primary">Ver GitHub</a>
+                            <a href="#contacto" class="btn-secondary">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="about-section">
-        <div class="about-content">
-            <h2>Sobre Mí</h2>
-            <div class="about-text">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="about-content">
+                        <h2 class="text-center mb-5">Sobre Mí</h2>
+                        <div class="about-text">
                 <p>
                     Soy estudiante de segundo año de Ingeniería en Sistemas en la Universidad Nacional Autónoma de Nicaragua, León (UNAN León). 
                     Mi interés principal está en el desarrollo web y la programación con Python, áreas en las que tengo un nivel intermedio.
@@ -63,112 +88,123 @@
                 <p>
                     Me gusta resolver problemas mediante código y crear aplicaciones web funcionales. Aunque aún estoy aprendiendo 
                     muchas tecnologías, me mantengo enfocado en dominar las bases y expandir gradualmente mi conocimiento.
-                </p>
+                        </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="skills-section">
-        <h2>Habilidades</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Lenguajes de Programación</h3>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
-                            <span class="skill-name">Python 3</span>
+        <div class="container">
+            <h2 class="text-center mb-5">Habilidades</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="skill-category h-100">
+                        <h3>Lenguajes de Programación</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon">
+                                    <span class="skill-name">Python 3</span>
+                                </div>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                                <span class="skill-level">Básico-Intermedio</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon">
+                                    <span class="skill-name">HTML</span>
+                                </div>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-icon">
+                                    <span class="skill-name">CSS</span>
+                                </div>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
                         </div>
-                        <span class="skill-level">Intermedio</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
-                            <span class="skill-name">JavaScript</span>
-                        </div>
-                        <span class="skill-level">Básico-Intermedio</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-icon">
-                            <span class="skill-name">HTML</span>
-                        </div>
-                        <span class="skill-level">Intermedio</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-icon">
-                            <span class="skill-name">CSS</span>
-                        </div>
-                        <span class="skill-level">Intermedio</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Desarrollo Web</h3>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Frontend" class="tech-icon">
-                            <span class="skill-name">Frontend Development</span>
-                        </div>
-                        <span class="skill-level">Intermedio</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Backend" class="tech-icon">
-                            <span class="skill-name">Backend Development</span>
-                        </div>
-                        <span class="skill-level">Básico</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="API" class="tech-icon">
-                            <span class="skill-name">REST APIs</span>
-                        </div>
-                        <span class="skill-level">Básico</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Responsive" class="tech-icon">
-                            <span class="skill-name">Responsive Design</span>
-                        </div>
-                        <span class="skill-level">Intermedio</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="skill-category">
-                <h3>Herramientas y Tecnologías</h3>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-icon">
-                            <span class="skill-name">Git / GitHub</span>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="skill-category h-100">
+                        <h3>Desarrollo Web</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Frontend" class="tech-icon">
+                                    <span class="skill-name">Frontend Development</span>
+                                </div>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Backend" class="tech-icon">
+                                    <span class="skill-name">Backend Development</span>
+                                </div>
+                                <span class="skill-level">Básico</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="API" class="tech-icon">
+                                    <span class="skill-name">REST APIs</span>
+                                </div>
+                                <span class="skill-level">Básico</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Responsive" class="tech-icon">
+                                    <span class="skill-name">Responsive Design</span>
+                                </div>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
                         </div>
-                        <span class="skill-level">Básico-Intermedio</span>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Database" class="tech-icon">
-                            <span class="skill-name">Bases de Datos</span>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="skill-category h-100">
+                        <h3>Herramientas y Tecnologías</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-icon">
+                                    <span class="skill-name">Git / GitHub</span>
+                                </div>
+                                <span class="skill-level">Básico-Intermedio</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Database" class="tech-icon">
+                                    <span class="skill-name">Bases de Datos</span>
+                                </div>
+                                <span class="skill-level">Básico</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" class="tech-icon">
+                                    <span class="skill-name">Postman</span>
+                                </div>
+                                <span class="skill-level">Básico</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-name-with-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tech-icon">
+                                    <span class="skill-name">VS Code</span>
+                                </div>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
                         </div>
-                        <span class="skill-level">Básico</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" class="tech-icon">
-                            <span class="skill-name">Postman</span>
-                        </div>
-                        <span class="skill-level">Básico</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name-with-icon">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tech-icon">
-                            <span class="skill-name">VS Code</span>
-                        </div>
-                        <span class="skill-level">Intermedio</span>
                     </div>
                 </div>
             </div>
@@ -176,151 +212,142 @@
     </section>
 
     <section class="projects-section">
-        <h2>Proyectos</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Proyecto Web Personal</h3>
-                    <span class="project-tag">Frontend</span>
+        <div class="container">
+            <h2 class="text-center mb-5">Proyectos</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <h3>Proyecto Web Personal</h3>
+                            <span class="project-tag">Frontend</span>
+                        </div>
+                        <p class="project-description">
+                            Sitio web personal desarrollado con HTML, CSS y JavaScript. Incluye diseño responsive 
+                            y secciones interactivas. Proyecto que me permitió practicar y mejorar mis habilidades 
+                            en desarrollo frontend.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-badge-icon">
+                                HTML
+                            </span>
+                            <span class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-badge-icon">
+                                CSS
+                            </span>
+                            <span class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-badge-icon">
+                                JavaScript
+                            </span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Imandro" target="_blank" class="project-link">Ver en GitHub →</a>
+                        </div>
+                    </div>
                 </div>
-                <p class="project-description">
-                    Sitio web personal desarrollado con HTML, CSS y JavaScript. Incluye diseño responsive 
-                    y secciones interactivas. Proyecto que me permitió practicar y mejorar mis habilidades 
-                    en desarrollo frontend.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="tech-badge-icon">
-                        HTML
-                    </span>
-                    <span class="tech-badge">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="tech-badge-icon">
-                        CSS
-                    </span>
-                    <span class="tech-badge">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-badge-icon">
-                        JavaScript
-                    </span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Imandro" target="_blank" class="project-link">Ver en GitHub →</a>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Proyectos Académicos</h3>
-                    <span class="project-tag">Python</span>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <h3>Proyectos Académicos</h3>
+                            <span class="project-tag">Python</span>
+                        </div>
+                        <p class="project-description">
+                            Colección de proyectos desarrollados durante mi carrera universitaria. Incluyen ejercicios 
+                            de programación, algoritmos y pequeñas aplicaciones desarrolladas en Python 3 como parte 
+                            de mis cursos de ingeniería en sistemas.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-badge-icon">
+                                Python 3
+                            </span>
+                            <span class="tech-badge">Algoritmos</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Imandro" target="_blank" class="project-link">Ver en GitHub →</a>
+                        </div>
+                    </div>
                 </div>
-                <p class="project-description">
-                    Colección de proyectos desarrollados durante mi carrera universitaria. Incluyen ejercicios 
-                    de programación, algoritmos y pequeñas aplicaciones desarrolladas en Python 3 como parte 
-                    de mis cursos de ingeniería en sistemas.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-badge">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-badge-icon">
-                        Python 3
-                    </span>
-                    <span class="tech-badge">Algoritmos</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Imandro" target="_blank" class="project-link">Ver en GitHub →</a>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Proyectos en Desarrollo</h3>
-                    <span class="project-tag">Aprendiendo</span>
-                </div>
-                <p class="project-description">
-                    Actualmente trabajando en proyectos que me permiten aprender nuevas tecnologías y frameworks. 
-                    Estos proyectos incluyen integración con APIs, bases de datos y mejores prácticas de desarrollo 
-                    de software.
-                </p>
-                <div class="project-tech">
-                    <span>En Proceso</span>
-                    <span>Práctica</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Imandro" target="_blank" class="project-link">Ver en GitHub →</a>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <h3>Proyectos en Desarrollo</h3>
+                            <span class="project-tag">Aprendiendo</span>
+                        </div>
+                        <p class="project-description">
+                            Actualmente trabajando en proyectos que me permiten aprender nuevas tecnologías y frameworks. 
+                            Estos proyectos incluyen integración con APIs, bases de datos y mejores prácticas de desarrollo 
+                            de software.
+                        </p>
+                        <div class="project-tech">
+                            <span>En Proceso</span>
+                            <span>Práctica</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Imandro" target="_blank" class="project-link">Ver en GitHub →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="education-section">
-        <h2>Educación</h2>
-        <div class="education-grid">
-            <div class="education-item">
-                <h3>Ingeniería en Sistemas</h3>
-                <p class="education-institution">Universidad Nacional Autónoma de Nicaragua, León (UNAN León)</p>
-                <p class="education-description">
-                    Actualmente cursando segundo año. Programa enfocado en fundamentos de programación, 
-                    estructuras de datos, bases de datos, desarrollo web y sistemas operativos.
-                </p>
+        <div class="container">
+            <h2 class="text-center mb-5">Educación</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="education-item">
+                        <h3>Ingeniería en Sistemas</h3>
+                        <p class="education-institution">Universidad Nacional Autónoma de Nicaragua, León (UNAN León)</p>
+                        <p class="education-description">
+                            Actualmente cursando segundo año. Programa enfocado en fundamentos de programación, 
+                            estructuras de datos, bases de datos, desarrollo web y sistemas operativos.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="contact-section" id="contacto">
-        <h2>Contacto</h2>
-        <p class="contact-description">
-            ¿Interesado en colaborar o tienes alguna pregunta? No dudes en contactarme.
-        </p>
-        <div class="contact-grid">
-            <a href="https://github.com/Imandro" target="_blank" class="contact-card">
-                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                <h3>GitHub</h3>
-                <p>github.com/Imandro</p>
-            </a>
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <p class="contact-description text-center mb-5">
+                ¿Interesado en colaborar o tienes alguna pregunta? No dudes en contactarme.
+            </p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="https://github.com/Imandro" target="_blank" class="contact-card">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <h3>GitHub</h3>
+                        <p>github.com/Imandro</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 </main>
 
 <footer>
-    <div class="footer-content">
-        <a href="https://github.com/Imandro" target="_blank" class="github-link">
-            <svg class="github-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            <span>Imandro GitHub</span>
-        </a>
-        <p class="copyright">© 2025 Imandro. Todos los derechos reservados.</p>
+    <div class="container">
+        <div class="footer-content">
+            <a href="https://github.com/Imandro" target="_blank" class="github-link">
+                <svg class="github-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>Imandro GitHub</span>
+            </a>
+            <p class="copyright">© 2025 Imandro. Todos los derechos reservados.</p>
+        </div>
     </div>
 </footer>
 
-<script>
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-        
-        
-        const links = navLinks.querySelectorAll('a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-            });
-        });
-        
-
-        document.addEventListener('click', (e) => {
-            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-            }
-        });
-    }
-</script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

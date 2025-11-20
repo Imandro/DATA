@@ -4,259 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadmap de Proyectos — Imandro</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <div class="logo">Imandro</div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="nav-links">
-            <a href="index.html">Inicio</a>
-            <a href="pagina2.html">Canciones</a>
-            <a href="portafolio.html">Detalles</a>
-            <a href="roadmap.html" class="active">Roadmap</a>
-            <a href="juego.html">Juego</a>
-            <a href="certificados.html">Certificados</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">Imandro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">Canciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portafolio.html">Detalles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="roadmap.html">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juego.html">Juego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certificados.html">Certificados</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
 
 <main>
     <section class="page-header">
-        <h1>Roadmap de Proyectos Futuros</h1>
-        <p>Descubre mis proyectos innovadores que estoy desarrollando</p>
+        <div class="container">
+            <h1>Roadmap de Proyectos Futuros</h1>
+            <p>Descubre mis proyectos innovadores que estoy desarrollando</p>
+        </div>
     </section>
 
     <section class="projects-section">
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>IA de Moda y Vestimenta</h3>
-                    <span class="project-tag">Proyecto 1</span>
-                </div>
-                <p class="project-description">
-                    Una aplicación de inteligencia artificial revolucionaria diseñada para transformar la experiencia de compra y estilo personal. 
-                    Utilizando tecnologías avanzadas de visión por computadora y machine learning para ofrecer recomendaciones personalizadas de moda.
-                </p>
-                
-                <div style="margin-top: 24px;">
-                    <h4 style="font-size: 18px; font-weight: 600; color: var(--accent-blue-light); margin-bottom: 16px;">Características Principales:</h4>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">📐</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Escaneo de Cuerpo</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Análisis preciso de medidas corporales mediante visión por computadora para recomendaciones de tallas perfectas.</span>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <h3>IA de Moda y Vestimenta</h3>
+                            <span class="project-tag">Proyecto 1</span>
+                        </div>
+                        <p class="project-description">
+                            Una aplicación de inteligencia artificial revolucionaria diseñada para transformar la experiencia de compra y estilo personal. 
+                            Utilizando tecnologías avanzadas de visión por computadora y machine learning para ofrecer recomendaciones personalizadas de moda.
+                        </p>
+                        
+                        <div class="features-section">
+                            <h4 class="features-title">Características Principales:</h4>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <span class="feature-icon">📐</span>
+                                    <div>
+                                        <strong>Escaneo de Cuerpo</strong>
+                                        <span>Análisis preciso de medidas corporales mediante visión por computadora para recomendaciones de tallas perfectas.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🎨</span>
+                                    <div>
+                                        <strong>Reconocimiento de Colores</strong>
+                                        <span>Identificación automática de paletas de colores y combinaciones que mejor se adaptan a tu tono de piel.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">👔</span>
+                                    <div>
+                                        <strong>Reconocimiento de Prendas</strong>
+                                        <span>Clasificación inteligente de prendas de vestir, accesorios y estilos mediante deep learning.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">✨</span>
+                                    <div>
+                                        <strong>Reconocimiento de Estilos</strong>
+                                        <span>Detección automática de estilos de moda (casual, formal, deportivo, etc.) y sugerencias personalizadas.</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">🎨</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Reconocimiento de Colores</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Identificación automática de paletas de colores y combinaciones que mejor se adaptan a tu tono de piel.</span>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">👔</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Reconocimiento de Prendas</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Clasificación inteligente de prendas de vestir, accesorios y estilos mediante deep learning.</span>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">✨</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Reconocimiento de Estilos</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Detección automática de estilos de moda (casual, formal, deportivo, etc.) y sugerencias personalizadas.</span>
-                            </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge">Computer Vision</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Deep Learning</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">OpenCV</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-tech" style="margin-top: 24px;">
-                    <span class="tech-badge">Computer Vision</span>
-                    <span class="tech-badge">Machine Learning</span>
-                    <span class="tech-badge">Deep Learning</span>
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">TensorFlow</span>
-                    <span class="tech-badge">OpenCV</span>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>App de Apoyo Espiritual</h3>
-                    <span class="project-tag">Proyecto 2</span>
-                </div>
-                <p class="project-description">
-                    Una aplicación móvil diseñada específicamente para ayudar a jóvenes cristianos y futuros cristianos a sobrellevar 
-                    el pecado y las adicciones. Ofrece herramientas prácticas, recursos bíblicos y una comunidad de apoyo para el crecimiento espiritual.
-                </p>
-                
-                <div style="margin-top: 24px;">
-                    <h4 style="font-size: 18px; font-weight: 600; color: var(--accent-blue-light); margin-bottom: 16px;">Funcionalidades Clave:</h4>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">📖</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Recursos Bíblicos</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Versículos, devocionales diarios y estudios bíblicos enfocados en la superación personal.</span>
+                <div class="col-12 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <h3>App de Apoyo Espiritual</h3>
+                            <span class="project-tag">Proyecto 2</span>
+                        </div>
+                        <p class="project-description">
+                            Una aplicación móvil diseñada específicamente para ayudar a jóvenes cristianos y futuros cristianos a sobrellevar 
+                            el pecado y las adicciones. Ofrece herramientas prácticas, recursos bíblicos y una comunidad de apoyo para el crecimiento espiritual.
+                        </p>
+                        
+                        <div class="features-section">
+                            <h4 class="features-title">Funcionalidades Clave:</h4>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <span class="feature-icon">📖</span>
+                                    <div>
+                                        <strong>Recursos Bíblicos</strong>
+                                        <span>Versículos, devocionales diarios y estudios bíblicos enfocados en la superación personal.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">📊</span>
+                                    <div>
+                                        <strong>Seguimiento de Progreso</strong>
+                                        <span>Herramientas para rastrear el progreso en la superación de adicciones y hábitos negativos.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">👥</span>
+                                    <div>
+                                        <strong>Comunidad de Apoyo</strong>
+                                        <span>Grupos de apoyo, mentoría y conexión con otros jóvenes en el mismo camino de fe.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🔔</span>
+                                    <div>
+                                        <strong>Recordatorios y Oraciones</strong>
+                                        <span>Notificaciones diarias con oraciones, reflexiones y motivación espiritual.</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">📊</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Seguimiento de Progreso</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Herramientas para rastrear el progreso en la superación de adicciones y hábitos negativos.</span>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">👥</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Comunidad de Apoyo</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Grupos de apoyo, mentoría y conexión con otros jóvenes en el mismo camino de fe.</span>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">🔔</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Recordatorios y Oraciones</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Notificaciones diarias con oraciones, reflexiones y motivación espiritual.</span>
-                            </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Push Notifications</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="project-tech" style="margin-top: 24px;">
-                    <span class="tech-badge">React Native</span>
-                    <span class="tech-badge">Firebase</span>
-                    <span class="tech-badge">Node.js</span>
-                    <span class="tech-badge">MongoDB</span>
-                    <span class="tech-badge">Push Notifications</span>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Juego de Granja Estilo Stardew Valley</h3>
-                    <span class="project-tag">Proyecto 3</span>
-                </div>
-                <p class="project-description">
-                    Un juego de simulación de granja desarrollado en Python, inspirado en Stardew Valley. 
-                    Cultiva tu granja, cría animales, explora el mundo y construye relaciones con los habitantes del pueblo.
-                </p>
-                
-                <div style="margin-top: 24px;">
-                    <h4 style="font-size: 18px; font-weight: 600; color: var(--accent-blue-light); margin-bottom: 16px;">Mecánicas del Juego:</h4>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">🌱</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Sistema de Cultivo</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Planta, riega y cosecha diferentes tipos de cultivos con ciclos de crecimiento realistas.</span>
+                <div class="col-12 col-lg-4">
+                    <div class="project-card h-100">
+                        <div class="project-header">
+                            <h3>Juego de Granja Estilo Stardew Valley</h3>
+                            <span class="project-tag">Proyecto 3</span>
+                        </div>
+                        <p class="project-description">
+                            Un juego de simulación de granja desarrollado en Python, inspirado en Stardew Valley. 
+                            Cultiva tu granja, cría animales, explora el mundo y construye relaciones con los habitantes del pueblo.
+                        </p>
+                        
+                        <div class="features-section">
+                            <h4 class="features-title">Mecánicas del Juego:</h4>
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <span class="feature-icon">🌱</span>
+                                    <div>
+                                        <strong>Sistema de Cultivo</strong>
+                                        <span>Planta, riega y cosecha diferentes tipos de cultivos con ciclos de crecimiento realistas.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🐄</span>
+                                    <div>
+                                        <strong>Crianza de Animales</strong>
+                                        <span>Cuida de animales de granja, recoge productos y mejora tus instalaciones.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">🏘️</span>
+                                    <div>
+                                        <strong>Sistema de NPCs</strong>
+                                        <span>Interactúa con personajes únicos, completa misiones y construye relaciones.</span>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="feature-icon">⛏️</span>
+                                    <div>
+                                        <strong>Exploración y Minería</strong>
+                                        <span>Explora cuevas, mina recursos y descubre tesoros ocultos en el mundo del juego.</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">🐄</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Crianza de Animales</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Cuida de animales de granja, recoge productos y mejora tus instalaciones.</span>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">🏘️</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Sistema de NPCs</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Interactúa con personajes únicos, completa misiones y construye relaciones.</span>
-                            </div>
-                        </div>
-                        <div style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: rgba(59, 130, 246, 0.05); border-radius: 8px; border: 1px solid var(--border);">
-                            <span style="font-size: 20px;">⛏️</span>
-                            <div>
-                                <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Exploración y Minería</strong>
-                                <span style="color: var(--text-secondary); font-size: 15px;">Explora cuevas, mina recursos y descubre tesoros ocultos en el mundo del juego.</span>
-                            </div>
+                        
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Pygame</span>
+                            <span class="tech-badge">Tkinter</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">JSON</span>
                         </div>
                     </div>
-                </div>
-                
-                <div class="project-tech" style="margin-top: 24px;">
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">Pygame</span>
-                    <span class="tech-badge">Tkinter</span>
-                    <span class="tech-badge">SQLite</span>
-                    <span class="tech-badge">JSON</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="stats-section">
-        <h2>Estado de los Proyectos</h2>
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">📅</div>
-                <div class="stat-label">IA de Moda</div>
-                <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px;">En Planificación</p>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">📅</div>
-                <div class="stat-label">App Espiritual</div>
-                <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px;">En Planificación</p>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">📅</div>
-                <div class="stat-label">Juego Python</div>
-                <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px;">En Planificación</p>
+        <div class="container">
+            <h2 class="text-center mb-5">Estado de los Proyectos</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">📅</div>
+                        <div class="stat-label">IA de Moda</div>
+                        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px;">En Planificación</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">📅</div>
+                        <div class="stat-label">App Espiritual</div>
+                        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px;">En Planificación</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="stat-item">
+                        <div class="stat-number">📅</div>
+                        <div class="stat-label">Juego Python</div>
+                        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px;">En Planificación</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 </main>
 
 <footer>
-    <div class="footer-content">
-        <a href="https://github.com/Imandro" target="_blank" class="github-link">
-            <svg class="github-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-            </svg>
-            <span>Imandro GitHub</span>
-        </a>
-        <p class="copyright">© 2025 Imandro. Todos los derechos reservados.</p>
+    <div class="container">
+        <div class="footer-content">
+            <a href="https://github.com/Imandro" target="_blank" class="github-link">
+                <svg class="github-logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>Imandro GitHub</span>
+            </a>
+            <p class="copyright">© 2025 Imandro. Todos los derechos reservados.</p>
+        </div>
     </div>
 </footer>
 
-<script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-        
-        const links = navLinks.querySelectorAll('a');
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-            });
-        });
- 
-        document.addEventListener('click', (e) => {
-            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-            }
-        });
-    }
-</script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
 
